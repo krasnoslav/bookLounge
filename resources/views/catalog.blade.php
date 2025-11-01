@@ -2,14 +2,21 @@
 @section('content')
     <section class="catalog">
         <div class="catalog__sort">
-            <div class="catalog__sort-item"></div>
-            <div class="catalog__sort-item"></div>
-            <div class="catalog__sort-item"></div>
+            <a href="{{ $params->has('filter') ? '?filter=' . $params['filter'] . '&' : '?' }}sort_by{{ $params->has('sort_by') == 'author' ? '_desc' : '' }}=author" 
+                class="catalog__sort-item">Автор</a>
+            <a href="{{ $params->has('filter') ? '?filter=' . $params['filter'] . '&' : '?' }}sort_by{{ $params->has('sort_by') == 'title' ? '_desc' : '' }}=title" 
+                class="catalog__sort-item">Название</a>
+            <a href="{{ $params->has('filter') ? '?filter=' . $params['filter'] . '&' : '?' }}sort_by{{ $params->has('sort_by') == 'publisher' ? '_desc' : '' }}=publisher" 
+                class="catalog__sort-item">Издатель</a>
+            <a href="{{ $params->has('filter') ? '?filter=' . $params['filter'] . '&' : '?' }}sort_by{{ $params->has('sort_by') == 'pagesCount' ? '_desc' : '' }}=pagesCount" 
+                class="catalog__sort-item">Количество страниц</a>
+            <a href="{{ $params->has('filter') ? '?filter=' . $params['filter'] . '&' : '?' }}sort_by{{ $params->has('sort_by') == 'price' ? '_desc' : '' }}=price" 
+                class="catalog__sort-item">Цена</a>
         </div>
         <div class="catalog__filter">
-            <div class="catalog__filter-item"></div>
-            <div class="catalog__filter-item"></div>
-            <div class="catalog__filter-item"></div>
+            @foreach ($genres as $genre)
+                <a href="{{ $params->has('sort_by') ? '?sort_by=' . $params['sort_by'] . '&' : ($params->has('sort_by_desc') ? '?sort_by_desc=' . $params['sort_by_desc'] . '&' : '?') }}filter={{ $genre->id }}" class="catalog__filter-item">{{ $genre->bookGenre }}</a>
+            @endforeach
         </div>
         <div class="catalog__list">
             @foreach ($books as $book)

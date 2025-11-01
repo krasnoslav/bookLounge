@@ -14,18 +14,19 @@
                     <tr class="cart__raw">
                         <td>{{ $item->title }}</td>
                         <td class="cart__qty">
-                            <button class="btn {{ $item->qty == $item->limit ? 'disabled' : '' }}" id="increase" 
-                                cartid="{{ $item->id }}">+</button>
+                            <button class="btn" id="decrease" cartid="{{ $item->id }}">-</button>
                             <span class="cart__qty-value">
                                 {{ $item->qty }}
                             </span>
-                            <button class="btn" id="decrease" cartid="{{ $item->id }}">-</button>
+                            <button class="btn {{ $item->qty == $item->limit ? 'disabled' : '' }}" id="increase" 
+                                cartid="{{ $item->id }}">+</button>
                         </td>
-                        <td class="cart__price">{{ $item->price * $item->qty }}</td>
+                        <td class="cart__price">{{ $item->price * $item->qty }} ₽</td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        <a href="{{ route('create-order') }}">Оформить заказ</a>
     </div>
     <script>
         const cartRaws = document.querySelectorAll('.cart__raw')
