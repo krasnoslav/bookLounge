@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: MySQL-8.4:3306
--- Время создания: Ноя 01 2025 г., 11:12
+-- Время создания: Ноя 02 2025 г., 19:51
 -- Версия сервера: 8.4.6
 -- Версия PHP: 8.3.26
 
@@ -93,7 +93,7 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `title`, `author`, `img`, `price`, `descr`, `bookCoverID`, `pagesCount`, `weight`, `publisher`, `series`, `ageLimit`, `ISBN`, `bookGenreID`, `qty`, `created_at`, `updated_at`) VALUES
-(1, 'Дюна', 'Фрэнк Герберт', 'dune.jpeg', 499, 'Первая книга цикла «Хроники Дюны» — одного из самых культовых научно-фантастических романов, завоевавших сердца миллионов читателей по всему миру. \n                        Суммарный тираж превышает 20 000 000 экземпляров.\n                        Осенью 2021 года вышла крупнобюджетная экранизация «Дюны» с Тимоти Шаламе и Зендаей в главных ролях. \n                        Однако экранизация охватила только первую часть книги, а премьера второй части намечена аж на ноябрь 2023 года. \n                        Не ждите продолжение в кино, читайте первоисточник прямо сейчас!', 2, '768', '373', 'АСТ', 'Эксклюзивная классика', '16+', '978-5-17-151432-7', 1, 10000, '2025-10-22 21:00:00', NULL),
+(1, 'Дюна', 'Фрэнк Герберт', 'dune.jpeg', 499, 'Первая книга цикла «Хроники Дюны» — одного из самых культовых научно-фантастических романов, завоевавших сердца миллионов читателей по всему миру. Суммарный тираж превышает 20 000 000 экземпляров. Осенью 2021 года вышла крупнобюджетная экранизация «Дюны» с Тимоти Шаламе и Зендаей в главных ролях. Однако экранизация охватила только первую часть книги, а премьера второй части намечена аж на ноябрь 2023 года.  Не ждите продолжение в кино, читайте первоисточник прямо сейчас!', 2, '768', '373', 'АСТ', 'Эксклюзивная классика', '16+', '978-5-17-151432-7', 1, 5000, '2025-10-22 21:00:00', '2025-11-01 10:05:13'),
 (2, 'Белые ночи', 'Федор Достоевский', 'whiteNights.jpeg', 299, 'В этот сборник вошли две ранние повести Достоевского – «Белые ночи» и «Неточка Незванова», которые считаются самыми поэтичными произведениями великого романиста.\n                        «Белые ночи» – одно из лучших произведений школы «сентиментального натурализма», по мнению критика Аполлона Григорьева. Это лирическая исповедь героя-мечтателя, одинокого и робкого человека, в жизни которого на какое-то время появляется девушка, а вместе с ней и надежда на более светлое будущее.\n                        «Неточка Незванова» – повесть, изначально задуманная автором как роман, где в основе сюжета лежит история жизни маленькой девочки. Неточка – тоже персонаж-мечтатель, она грезит о жизни в большом красивом особняке, который видит из окна каморки на чердаке. Но, очутившись в нем, Неточка сталкивается с действительностью, которая оказалась вовсе не так прекрасна…', 2, '320', '200', 'АСТ', 'Эксклюзив: Русская классика', '12+', '978-5-17-106575-1', 2, 20000, '2025-10-22 21:00:00', NULL),
 (3, 'Вечеринка в Хэллоуин', 'Агата Кристи', 'partyAtHalloween.jpeg', 389, 'Агата Кристи — самый публикуемый автор всех времен и народов после Шекспира. Тиражи ее книг уступают только тиражам его произведений и Библии. В мире продано больше миллиарда книг Кристи на английском языке и столько же — на других языках. Она автор восьмидесяти детективных романов и сборников рассказов, двадцати пьес, двух книг воспоминаний и шести психологических романов, написанных под псевдонимом Мэри Уэстмакотт. Ее персонажи Эркюль Пуаро и мисс Марпл навсегда стали образцовыми героями остросюжетного жанра.\n                        Эта мрачная, зловещая книга была посвящена Агатой Кристи известному британскому юмористу, автору рассказов о Дживсе и Вустере П.Г. Вудхаузу. В частности, в посвящении содержалась благодарность за то, что «он был так добр, говоря, что ему нравятся мои книги».', 2, '320', '145', 'Эксмо', 'Агата Кристи. Любимая коллекция', '16+', '978-5-04-106088-6', 3, 20000, '2025-10-22 21:00:00', NULL),
 (4, 'Мозг. Ваша личная история', 'Дэвид Иглмен', 'brain.jpeg', 499, 'Мы считаем, что наш мир во многом логичен и предсказуем, а потому делаем прогнозы, высчитываем вероятность землетрясений, \n                        эпидемий, экономических кризисов, пытаемся угадать результаты торгов на бирже и спортивных матчей. \n                        В этом безбрежном океане данных важно уметь правильно распознать настоящий сигнал и не отвлекаться на \n                        бесполезный информационный шум.', 2, '256', '270', 'КоЛибри', 'Природа человека', '16+', '978-5-389-14945-8', 4, 10000, '2025-10-22 21:00:00', NULL),
@@ -135,14 +135,6 @@ CREATE TABLE `cart` (
   `bid` int NOT NULL,
   `qty` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Дамп данных таблицы `cart`
---
-
-INSERT INTO `cart` (`id`, `uid`, `bid`, `qty`) VALUES
-(4, 1, 2, 1),
-(5, 1, 4, 1);
 
 -- --------------------------------------------------------
 
@@ -220,7 +212,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (12, '0001_01_01_000000_create_users_table', 9),
 (13, '2025_10_30_091039_create_cart_table', 10),
 (14, '2025_11_01_055205_create_orders_table', 11),
-(15, '2025_11_01_065613_add_admin', 12);
+(15, '2025_11_01_065613_add_admin', 12),
+(16, '2025_11_02_134556_add_order_number', 13);
 
 -- --------------------------------------------------------
 
@@ -233,9 +226,19 @@ CREATE TABLE `orders` (
   `uid` int NOT NULL,
   `bid` int NOT NULL,
   `qty` int NOT NULL,
-  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Новый',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Новый',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `number` varchar(8) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `orders`
+--
+
+INSERT INTO `orders` (`id`, `uid`, `bid`, `qty`, `status`, `created_at`, `number`) VALUES
+(1, 1, 2, 1, 'Новый', '2025-11-02 15:46:02', 'e14G85rs'),
+(2, 1, 4, 1, 'Новый', '2025-11-02 15:46:02', 'e14G85rs'),
+(3, 1, 1, 1, 'Новый', '2025-11-02 15:46:02', 'e14G85rs');
 
 -- --------------------------------------------------------
 
@@ -269,7 +272,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('HKFbUAulfsGCznwx5Qob9LdSweWhDrpQaBxLPhfU', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNzlXM2R3SGIzNHgxeG91OXVqSjlZS0FmQVNrOTRsZ1RHdjVEdkFiUCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jcmVhdGUtb3JkZXIiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO30=', 1761981092);
+('TE8YbvsTOEEEFjTNEAgEFmJ4hHYz2txXjYWdd1XS', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiVVY0RUk2b0tuWTZYdDBEaDlzNUJrMzNib2JVbGtldGVtd01kTjJNeiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9vcmRlcnMiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO30=', 1762098611);
 
 -- --------------------------------------------------------
 
@@ -413,13 +416,13 @@ ALTER TABLE `bookGenres`
 -- AUTO_INCREMENT для таблицы `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `failed_jobs`
@@ -437,13 +440,13 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
